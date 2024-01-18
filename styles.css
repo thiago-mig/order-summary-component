@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: rgb(224, 232, 255);
+  min-height: 100vh;
+  font-family: 'Red hat Display', sans-serif;
+}
+
+main {
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -45%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+  width: 432px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 10px 20px rgb(167, 186, 205);
+  scale: 0.90;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 35px;
+  gap: 15px;
+}
+
+.content > p {
+  width: 100%;
+}
+
+h1, h2 {
+  color: rgb(31, 47, 86);
+  text-align: center;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  color: rgb(114, 128, 167);
+  text-align: center;
+}
+
+.plan-section {
+  background-color: rgb(245, 247, 255);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.plan-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.plan-wrapper img {
+  margin-right: 10px;
+}
+
+.plan-wrapper div {
+  display:flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+h3 {
+  text-align: right;
+  font-size: .95em;
+}
+
+h3 a:link,
+h3 a:visited {
+  color: rgb(56, 41, 224);
+}
+
+h3 a:hover {
+  text-decoration: none;
+  color: rgb(114, 128, 167);
+}
+
+button:first-of-type {
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  font-size: .86em;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 41, 224);
+  padding: 16px;
+  align-self: center;
+  box-shadow: 1px 1px ;
+  box-shadow: 1px 8px 20px rgb(167, 186, 205);
+}
+
+button:first-of-type:hover {
+  cursor: pointer;
+  background-color: rgb(114, 128, 167);
+}
+
+button:last-of-type {
+  padding: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: .86em;
+  font-weight: 900;
+  color: rgb(114, 128, 167);
+}
+
+button:last-of-type:hover {
+  cursor: pointer;
+  color: rgb(31, 47, 86);
+}
+
+@media screen and (max-width: 480px){
+  main {
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+}
